@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link href="bootstrap3.css" rel="stylesheet">
+    <link rel='stylesheet' href='riri.css' />
+    <!--<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="css/bootstrap-responsive.min.css" rel="stylesheet">-->
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+
+    <script src="snowflakes.min.1.0.0.js"></script>
+    <link rel='stylesheet' href='timemil.css' />
+    <!--<script src="temp/three.min.js"></script>-->
+    <script src="bootstrap3.js"></script>
+
+    <!--<style type="text/css">-->
+        <!--body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}-->
+    <!--</style>-->
+
+
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Kry6T52I7x4zhWEtEE5eSz1b5it528dm"></script>-->
+
+    <!--<img src="../../hepingzlh.github.io-main/hepingzlh.github.io-main/christmas2023.jpg" height="1080" width="1920"/>-->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        [class*="span"] {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+
+        #quan{
+            width: 100%;
+            height: 2000px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            opacity: 0.86;
+            pointer-events: none;
+
+        }
+        div{
+            pointer-events: auto;
+        }
+
+    </style>
+</head>
+<!--<body style="background-color:cadetblue ">-->
+
+<body id="tag" onclick="tm()" >
+<!--<body>-->
+
+<div class="container">
+
+    <div style="background-color:#4bb1cf;">
+        <div class="row">
+            <div class="col-xs-12" style="background-color:beige;">
+                <div class="navbar navbar-default" role="navigation">
+                    <ul class="nav navbar-nav" style="font-weight: bold;font-size: 18px">
+                        <li class="active"><a href="##">网站首页</a></li>
+                        <li><a href="http://www.163.com" target="_blank">系列教程</a></li>
+                        <li><a href="http://www.baidu.com" target="_blank">名师介绍</a></li>
+                        <li><a href="##">成功案例</a></li>
+                        <li><a href="##">联系我们</a></li>
+                    </ul>
+                    <span id="ye123" style="font-size: 18px;">123</span>
+                </div>
+            </div>
+
+        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-xs-12" >-->
+                <!--&lt;!&ndash;<h1>我们一家三口人：儿子，老婆和我。儿子叫魏运祺，老婆叫张玲华，我叫何平。</h1>&ndash;&gt;-->
+                <!--&lt;!&ndash;<img src="bestbanner.gif">&ndash;&gt;-->
+                <!--<embed src="bestbanner.gif" style="width: 100%" >-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="row">
+            <div class="col-xs-12">
+
+                <img src="christmas2023.jpg" style="width: 100%" >
+            </div>
+        </div>
+
+        <!--<div class="row">-->
+            <!--<div class="col-xs-12">-->
+
+                <!--<img src="900newtext.jpg" style="width: 100%" >-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="row">
+            <div class="col-xs-12">
+                <!--<div id = "allmap"></div>-->
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="2626.jpg" style="width: 100%" alt="2022.8" title="2022.8">
+            </div>
+            <div class="col-xs-6">
+                <img src="2626ps.jpg" style="width: 100%" alt="2022.8" title="2022.8">
+            </div>
+
+        </div>
+
+        <!--<script type="text/javascript">-->
+            <!--//百度地图API功能-->
+            <!--var map = new BMap.Map("allmap");-->
+            <!--map.centerAndZoom(new BMap.Point(120.378386,30.309756),15);//根据坐标初始化地图-->
+            <!--map.enableScrollWheelZoom(true);-->
+            <!--map.addControl(new BMap.NavigationControl()); //平移缩放控件-->
+            <!--map.addControl(new BMap.ScaleControl()); //比例尺-->
+            <!--map.addControl(new BMap.OverviewMapControl()); //缩略地图-->
+            <!--map.addControl(new BMap.MapTypeControl()); //地图类型-->
+            <!--map.setCurrentCity("杭州"); // 仅当设置城市信息时，MapTypeControl的切换功能才能可用-->
+            <!--//添加标注-->
+            <!--var marker = new BMap.Marker(new BMap.Point(120.378386,30.309756)); // 创建标注-->
+            <!--map.addOverlay(marker); // 将标注添加到地图中-->
+        <!--</script>-->
+
+        <div class="row" >
+            <hr style="margin-top: 0px;margin-bottom: 0px">
+            <div class="col-xs-4" style="margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px">
+                <img src="img1/11green.jpg" style="margin-top: 0px;padding-top: 0px;width: 100%" alt="您的图">
+                <!--<div class="box">-->
+                    <!--<p class="times">-->
+                        <!--<span class="min">00</span>-->
+                        <!--<b>:</b>-->
+                        <!--<span class="second">00</span>-->
+                        <!--<b>:</b>-->
+                        <!--<span class="millisecond">00</span>-->
+                        <!--<span class="rendom">0</span>-->
+                    <!--</p>-->
+                    <!--<p class="con">-->
+                        <!--<button type="button" class="start" id="start1">开始</button>-->
+                        <!--<button type="button" class="end" id="end1">停止</button>-->
+                        <!--<button type="button" class="reset" id="reset1">复位</button>-->
+                    <!--</p>-->
+                <!--</div>-->
+
+                <!--<script src="timemil.js"></script>-->
+            </div>
+            <div class="col-xs-4" style="margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px">
+                <img src="img1/33.jpg" style="width: 100%">
+            </div>
+            <div class="col-xs-4" style="margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px">
+                <img src="img1/22.jpg" style="width: 100%">
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-xs-6 ">
+                <dl><img src="img1/44.jpg" style="width: 100%"></dl>
+                <dt><h3>儿子和我，摄于2014年</h3></dt>
+
+            </div>
+            <div class="col-xs-6">
+                <dl><img src="img1/55.jpg" style="width: 100%"></dl>
+                <dt><h3>父亲，母亲，摄于家中</h3></dt>
+
+            </div>
+
+        </div>
+
+        <div class="row" >
+            <hr style="margin-top: -2px;padding-top: -2px">
+            <div class="col-xs-8" >
+                <dl><img src="wu1.png " style="width: 100%"></dl>
+                <dt><h4 style="text-align: center">沙市家照片</h4></dt>
+
+            </div>
+            <div class="col-xs-4" style="background-color: white;">
+                <!--<dl><img src="add/f9.jpg">-->
+                <!--</dl>-->
+                <div class='calendar' id='calendar' style="width: 100%"></div>
+
+                <dt></dt>
+
+
+            </div>
+
+        </div>
+        <script type='text/javascript' src='cal.js'></script>
+        <div class="row">
+            <hr>
+            <div class="col-xs-9" >
+                <dl><img src="wifeinwater.jpg " style="width: 705px"></dl>
+                <dt><h4 style="text-align: center">美人鱼 my front wife</h4></dt>
+
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f8.jpg" style="width: 100%">
+                </dl>
+                <dt>人生得意须尽欢，莫使金樽空对月。</dt>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-9" >
+                <hr style="background-color: yellow;margin-top: 0px;padding-top: 0px">
+                <ol><h3>7月19日，开始写些东西,bootstrap去掉div中间间隙。</h3>
+                <li><h4>先将padding和magin调为零，再设span的宽度。不过，offset不能用了，可以用span替代的方法。</h4></li>
+                </ol>
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f1.jpg" style="width: 100%">
+                </dl>
+                <dt>执子之手，与子携老。</dt>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-9">
+                <hr>
+                <xmp>
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                        <title>Document</title>
+                        <script src="jquery-3.4.1.min.js"></script>
+                        <script src="filesave.js"></script>
+                        <script src="angular.js"></script>
+                    </head>
+                    <body>
+                    <div ng-app="myApp" ng-controller="myController">
+                        <h2>我的笔记</h2>
+                        <form>
+                            <textarea ng-model="message" rows="10" cols="40"></textarea>
+                            <P>
+                                <button ng-click="save()">保存</button>
+                                <button ng-click="clear()">清空</button>
+                            </P>
+                        </form>
+                        <h2>剩余字数：<span ng-bind="left()"></span></h2>
+
+                    </div>
+                    <script>
+                        var app = angular.module("myApp", []);
+                        app.controller("myController", function ($scope) {
+                            $scope.message = '';
+                            $scope.save = function () {
+                                // alert("notes save!");
+
+                                var content = $scope.message.value;
+                                var blob = new Blob([content], {type: "text/plain;charset=utf-8"});
+                                saveAs(blob, "file1.txt"); //saveAs(blob,filename)
+
+
+                            }
+                            $scope.clear = function () {
+                                $scope.message = '';
+                            }
+                            $scope.left = function () {
+                                return 100 - $scope.message.length;
+                            }
+                        })
+                    </script>
+
+
+                    </body>
+                    </html>
+
+                </xmp>
+
+
+
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f4.jpg" style="width: 100%">
+                </dl>
+                <dt>生命可贵，爱情价高。</dt>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-9">
+                <hr style="background-color: yellow;margin-top: 0px;padding-top: 0px" >
+                <ol><h3>7月20日，cdr可导入cad图</h3>
+                    <li><h4>cdr导入cad图，很方便。导入后再编辑。</h4></li>
+                </ol>
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f4.jpg" style="width: 100%">
+                </dl>
+                <dt>生命可贵，爱情价高。</dt>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
+                <hr style="background-color: yellow;margin-top: 0px;padding-top: 0px" >
+                <ol><h3>7月21日，今天无甚说的</h3>
+                    <h4>  <pre style="background:none;border: none;margin-left: -180px;font-size: 16px">
+                        天净沙·秋思
+                              -马致远
+                        枯藤老树昏鸦，小桥流水人家，
+                        古道西风瘦马。夕阳西下，断肠人在天涯。
+
+                    </pre></h4>
+                </ol>
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f5.jpg" style="width: 100%">
+                </dl>
+                <dt>授人以鱼，不如授人以渔。</dt>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
+                <hr style="background-color: yellow;margin-top: 0px;padding-top: 0px" >
+                <ol><h3>7月22日，cdr图形属性可复制，像格式刷一样</h3>
+                    <li><h4>
+                        用图片填充图形时，可定义图片是否和图形同步旋转。
+                    </h4></li>
+                </ol>
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f8.jpg" style="width: 100%">
+                </dl>
+                <dt>蓬生麻中，不扶而直。白沙在涅，与之俱黑。</dt>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
+                <hr style="background-color: yellow;margin-top: 0px;padding-top: 0px" >
+                <ol><h3>7月23日，cdr图形可标尺寸</h3>
+                    <li><h4>
+                        cdr曲线有很多功能。
+                    </h4></li>
+                    <li><h4>
+                        有室内设计图块，搞室内设计也容易。
+                    </h4></li>
+                </ol>
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f9.jpg" style="width: 100%">
+                </dl>
+                <dt>疏影横斜水清浅，暗香浮动月黄昏。</dt>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
+                <hr style="background-color: yellow;margin-top: 0px;padding-top: 0px" >
+                <ol><h3>7月25，26日，周末休息</h3>
+
+                </ol>
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f10.jpg" style="width: 100%">
+                </dl>
+                <dt>鸟宿池边树,僧敲月下门。</dt>
+            </div>
+        </div>
+        <div class="row">
+             <hr>
+            <div class="col-xs-12 " >
+                <dl><img src="jia1.png" style="width: 100%"></dl>
+                <dt><h3>看看家的照片</h3></dt>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-xs-9">
+                <hr style="background-color: yellow;margin-top: 0px;padding-top: 0px" >
+                <ol><h3>7月27日，cdr可自定笔刷</h3>
+                    <li><h4>
+                        cdr也有网格功能
+                    </h4></li>
+
+                </ol>
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f11.jpg" style="width: 100%">
+                </dl>
+                <dt>会当凌绝顶，一览众山小。</dt>
+
+        </div>
+
+    </div>
+        <div class="row">
+            <hr>
+            <div class="col-xs-12 " >
+                <dl><img src="jia2.png" style="width: 100%"></dl>
+                <dt><h4>沙市家的照片</h4></dt>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+        <hr>
+        <div class="col-xs-12 " >
+            <dl><img src="office.png" style="width: 100%"></dl>
+            <dt><h4 style="text-align: center">办公室的照片</h4></dt>
+
+        </div>
+
+
+    </div>
+        <div class="row">
+            <hr>
+            <div class="col-xs-12 " >
+                <dl><img src="officeandone.png" style="width: 100%"></dl>
+                <dt><h4 style="text-align: center">办公室的照片</h4></dt>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-xs-9 ">
+                <dl><img src="融锌炉.jpg"></dl>
+                <dt><h4 style="text-align: center">专利图</h4></dt>
+
+            </div>
+            <div class="col-xs-3">
+            <dl><img src="add/f12.jpg" style="width: 100%">
+            </dl>
+            <dt>寒塘渡鹤影，冷月伴孤魂。</dt>
+            <hr>
+            <ol>
+                <li>阿富汗塔利班发言人穆罕默德·纳伊姆15日宣布，塔利班武装人员已进入并控制了首都喀布尔，“阿富汗的战争已经结束”。塔利班控制下的喀布尔当下局势如何？各方是否会成立过渡政权？各方对阿富汗局势重大变化做何反应？</li>
+            </ol>
+
+        </div>
+
+</div>
+        <div class="row">
+        <hr>
+        <div class="col-xs-9 ">
+            <dl><img src="zhouwang.jpg"></dl>
+            <dt><h4 style="text-align: center">建筑轴网图</h4></dt>
+
+        </div>
+        <div class="col-xs-3">
+            <dl><img src="add/f13.jpg" style="width: 100%">
+            </dl>
+            <dt>一切美好只是昨日沉醉。</dt>
+
+
+        </div>
+
+    </div>
+        <div class="row">
+            <hr>
+            <div class="col-xs-9" >
+                <dl><embed src="捕获%2001.mp4 " style="width:100%;height: 500px"></dl>
+                <dt><h4 style="text-align: center">建筑PKPM</h4></dt>
+
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f14.jpg" style="width: 100%" >
+                </dl>
+                <dt>人面不知何处去，桃花依旧笑春风。</dt>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-xs-9" >
+                <dl><embed src="mymovieok.mp4" style="width: 705px;height:395px"></dl>
+
+                <dt><h4 style="text-align: center">我和儿子</h4></dt>
+
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f15.jpg" style="width: 100%" >
+                </dl>
+                <dt>人生得意需尽欢，莫使金樽空对月。</dt>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-xs-9" >
+                <dl>2021年9月6日，周末在家编了几部MTV</dl>
+
+                <dt></dt>
+
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f16.jpg" style="width: 100%">
+                </dl>
+                <dt>山穷水复疑无路，柳暗花明又一村。</dt>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+        <hr>
+        <div class="col-xs-9" >
+            <dl><embed src="meiduanlu.mp4 " style="width: 100%;height: 500px"></dl>
+            <dt><h4 style="text-align: center">吕方 每段路</h4></dt>
+
+        </div>
+        <div class="col-xs-3">
+            <dl><img src="add/f18.jpg" style="width: 100%">
+            </dl>
+            <dt>但愿人长久，千里共婵娟。</dt>
+
+
+        </div>
+
+    </div>
+        <div class="row">
+            <hr>
+            <div class="col-xs-9" >
+                <dl><embed src="观鹅图.mp4 " style="width: 705px;height: 600px"></dl>
+                <dt><h4 style="text-align: center">观鹅图</h4></dt>
+
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f19.jpg" style="width: 100%">
+                </dl>
+                <dt>好好学习，天天向上。</dt>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-xs-9" >
+                <dl><img src="sunplanet.jpg " ></dl>
+                <dt><h4 style="text-align: center">结构简图</h4></dt>
+
+            </div>
+            <div class="col-xs-3">
+                <dl><img src="add/f10.jpg" style="width: 100%">
+                </dl>
+                <dt>就右边的结构图，您也许不知道它的实际意义。好多公司就靠这个算式发达。难怪都说要保密，公司如此，国家也如此。</dt>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+        <script language=JavaScript>
+
+            <!-- [Step1]: 这里能够改变站点的开业日期年月日 -->
+            StartTime(2020,11,25);
+
+            function StartTime(Y,M,D)
+            {
+                Now=new Date();
+                Nowy=Now.getFullYear();
+                Nowm=Now.getMonth();
+                Nowd=Now.getDate();
+                MA=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+                Nowstring=MA[Nowm]+" "+Nowd+", "+Nowy;
+                Paststring=MA[M-1]+" "+D+", "+Y;
+                TotalDate=(Math.round((Date.parse(Nowstring)-Date.parse(Paststring))/(24*3600000))*1);
+                <!-- [Step2]: 这里可以更该页面显示的提示信息 -->
+                // document.write("本网站已经正常开业 "+TotalDate+" 天了。");
+
+
+                var yer=document.getElementById("ye123");
+                yer.innerHTML="本网站已经正常开业 "+TotalDate+" 天了。"
+
+            }
+
+
+
+
+
+        </script>
+
+<div id="quan" ></div>
+<script>
+    function rnd(m,n){
+        return parseInt(Math.random()*(n-m)+m);
+    };
+    function ttt()
+    {
+        var oDiv=document.getElementById('tag');
+        oDiv.style.background='rgb('+rnd(0,256)+', '+rnd(0,256)+', '+rnd(0,256)+')';
+    };
+
+    var t2 = window.setInterval(function() {
+
+        ttt();
+    },6000)
+
+    // window.clearInterval(t2)  // 去除定时器
+    var quan=document.getElementById("quan");
+    function tm() {
+       // for(i=0;i<quan.length;i++)
+        quan.style.opacity=0;
+        pointerEvents: "none";
+    }
+
+
+</script>
+
+
+</body>
+</html>
